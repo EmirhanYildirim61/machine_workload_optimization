@@ -4,8 +4,8 @@ import numpy as np
 def create_rand_orders():
     np.random.seed(61)
     data = {
-        'id': range(1, 501),
-        'size': np.random.randint(1, 101, 500)
+        'id': range(1, 100001),
+        'size': np.random.randint(1, 101, 100000)
     }
     df = pd.DataFrame(data)
     df.to_csv('data.csv', index=False)
