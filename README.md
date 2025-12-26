@@ -4,7 +4,7 @@ This project implements a workload distribution algorithm to assign manufacturin
 
 ## Overview
 
-The system processes 500 randomly generated orders, each with a specific size. For every order, the algorithm calculates the processing time for each machine using specific efficiency formulas and assigns the order to the machine that will finish it earliest, taking into account the current workload.
+The system processes 100,000 randomly generated orders, each with a specific size. For every order, the algorithm calculates the processing time for each machine using specific efficiency formulas and assigns the order to the machine that will finish it earliest, taking into account the current workload.
 
 ### Machine Efficiency Formulas
 
@@ -14,7 +14,7 @@ The system processes 500 randomly generated orders, each with a specific size. F
 
 ## How It Works
 
-1.  **Data Generation**: Generates 500 random orders with sizes between 1 and 100 which are saved to `data.csv`.
+1.  **Data Generation**: Generates 100,000 random orders with sizes between 1 and 100 which are saved to `data.csv`.
 2.  **Processing**: The script reads the orders and iteratively assigns each one to the machine that offers the earliest finish time (current workload + new processing time).
 3.  **Result**: The final assignment, processing time, and completion time for each order are saved to `results.csv`. The total workload for each machine is printed to the console.
 
